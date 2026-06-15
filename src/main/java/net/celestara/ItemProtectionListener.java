@@ -38,23 +38,27 @@ public final class ItemProtectionListener implements Listener {
     private boolean shouldProtect(EntityDamageEvent event) {
         ProtectionSettings settings = plugin.protectionSettings();
 
-        if (event instanceof EntityDamageByEntityEvent byEntityEvent) {
-            if (isProtectedDamager(byEntityEvent.getDamager(), settings)) {
-                return true;
-            }
+        if (event.getCause() == EntityDamageEvent.DamageCause.BLOCK_EXPLOSION) {
+            return isRespawnAnchorExplosion(event, settings);
         }
 
-        DamageSource damageSource = event.getDamageSource();
-        if (damageSource != null
-                && (isProtectedDamager(damageSource.getDirectEntity(), settings)
-                || isProtectedDamager(damageSource.getCausingEntity(), settings))) {
+        if (event.getCause() != EntityDamageEvent.DamageCause.ENTITY_EXPLOSION) {
+            return false;
+        }
+
+        return isProtectedEntityExplosion(event, settings);
+    }
+
+    private boolean isProtectedEntityExplosion(EntityDamageEvent event, ProtectionSettings settings) {
+        if (event instanceof EntityDamageByEntityEvent byEntityEvent
+                && isProtectedDamager(byEntityEvent.getDamager(), settings)) {
             return true;
         }
 
-        return switch (event.getCause()) {
-            case BLOCK_EXPLOSION -> isRespawnAnchorExplosion(event, settings);
-            default -> false;
-        };
+        DamageSource damageSource = event.getDamageSource();
+        return damageSource != null
+                && (isProtectedDamager(damageSource.getDirectEntity(), settings)
+                || isProtectedDamager(damageSource.getCausingEntity(), settings));
     }
 
     private boolean isProtectedDamager(Entity damager, ProtectionSettings settings) {
