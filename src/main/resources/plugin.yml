@@ -1,0 +1,33 @@
+name: CelestaraAntiBlast
+version: '1.0-ALPHA-SNAPSHOT'
+main: net.celestara.CelestaraAntiBlast
+api-version: '1.21'
+authors: [ Wamens ]
+description: Protects configured item drops from TNT, end crystal, and respawn anchor blasts.
+commands:
+  celestaraantiblast:
+    description: Manage CelestaraAntiBlast.
+    usage: /<command> <add|remove|list|reload> [material]
+    aliases: [ antiblast, cab ]
+    permission: celestaraantiblast.admin
+permissions:
+  celestaraantiblast.admin:
+    description: Gives access to all CelestaraAntiBlast admin commands.
+    default: op
+    children:
+      celestaraantiblast.command.add: true
+      celestaraantiblast.command.remove: true
+      celestaraantiblast.command.list: true
+      celestaraantiblast.command.reload: true
+  celestaraantiblast.command.add:
+    description: Allows adding protected items.
+    default: op
+  celestaraantiblast.command.remove:
+    description: Allows removing protected items.
+    default: op
+  celestaraantiblast.command.list:
+    description: Allows listing protected items.
+    default: op
+  celestaraantiblast.command.reload:
+    description: Allows reloading the plugin configuration.
+    default: op

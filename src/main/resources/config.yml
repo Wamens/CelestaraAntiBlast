@@ -1,0 +1,171 @@
+settings:
+  enable-messages: true
+  debug-mode: false
+
+protection:
+  end-crystals: true
+  respawn-anchors: true
+  tnt: true
+
+messages:
+  item-added: '&aSuccessfully added &7%item% &ato protected list.'
+  item-removed: '&cSuccessfully removed &7%item% &cfrom protected list.'
+  item-already-protected: '&cThis item is already protected.'
+  item-not-protected: '&cThis item is not in the protected list.'
+  no-item-in-hand: '&cYou must be holding an item or typing a valid material!'
+  invalid-item: '&cThat is not a valid item material.'
+  config-reloaded: '&aConfiguration reloaded!'
+  no-permission: '&cYou don''t have permission!'
+  list-header: '&7&m--------&r &aProtected Items &7&m--------'
+  list-item: '&8- &a%item%'
+  list-empty: '&7No items are protected.'
+  list-footer: '&7&m----------------------------'
+
+protected-items:
+  - EGG
+  - CRYING_OBSIDIAN
+  - SNOWBALL
+  - LAPIS_LAZULI
+  - LIGHT_GRAY_BUNDLE
+  - EMERALD
+  - NETHERITE_HELMET
+  - ORANGE_SHULKER_BOX
+  - DIAMOND_BLOCK
+  - EMERALD_BLOCK
+  - NETHERITE_BOOTS
+  - IRON_BLOCK
+  - EXPOSED_COPPER_GOLEM_STATUE
+  - CROSSBOW
+  - GOLD_NUGGET
+  - SHULKER_BOX
+  - REDSTONE
+  - RAW_GOLD
+  - RAW_IRON
+  - PINK_SHULKER_BOX
+  - OXIDIZED_COPPER_GOLEM_STATUE
+  - BUNDLE
+  - DIAMOND_ORE
+  - ANCIENT_DEBRIS
+  - MAGENTA_BUNDLE
+  - BLACK_SHULKER_BOX
+  - DIAMOND
+  - REDSTONE_BLOCK
+  - SHIELD
+  - AMETHYST_SHARD
+  - BLUE_SHULKER_BOX
+  - DEEPSLATE_GOLD_ORE
+  - PURPLE_SHULKER_BOX
+  - GREEN_SHULKER_BOX
+  - COAL_ORE
+  - DRAGON_EGG
+  - RESPAWN_ANCHOR
+  - DIAMOND_HORSE_ARMOR
+  - COPPER_GOLEM_STATUE
+  - COAL
+  - TURTLE_HELMET
+  - DIAMOND_PICKAXE
+  - AMETHYST_CLUSTER
+  - CYAN_SHULKER_BOX
+  - DIAMOND_HOE
+  - CYAN_BUNDLE
+  - DEEPSLATE_LAPIS_ORE
+  - OBSIDIAN
+  - GLOWSTONE
+  - POTION
+  - GOLD_ORE
+  - WAXED_WEATHERED_COPPER_GOLEM_STATUE
+  - ELYTRA
+  - DIAMOND_SWORD
+  - LIGHT_BLUE_SHULKER_BOX
+  - DIAMOND_HELMET
+  - GRAY_BUNDLE
+  - TRIDENT
+  - EXPERIENCE_BOTTLE
+  - NETHER_QUARTZ_ORE
+  - WAXED_OXIDIZED_COPPER_GOLEM_STATUE
+  - ENDER_PEARL
+  - WHITE_BUNDLE
+  - EMERALD_ORE
+  - MACE
+  - GRAY_SHULKER_BOX
+  - DISPENSER
+  - END_CRYSTAL
+  - LIGHT_GRAY_SHULKER_BOX
+  - DIAMOND_AXE
+  - IRON_INGOT
+  - IRON_ORE
+  - MAGENTA_SHULKER_BOX
+  - BLACK_BUNDLE
+  - RED_BUNDLE
+  - LIME_BUNDLE
+  - NETHER_GOLD_ORE
+  - RAW_COPPER
+  - LIGHT_BLUE_BUNDLE
+  - ORANGE_BUNDLE
+  - LIME_SHULKER_BOX
+  - BOW
+  - GOLD_INGOT
+  - WHITE_SHULKER_BOX
+  - NETHER_STAR
+  - DROPPER
+  - YELLOW_SHULKER_BOX
+  - WEATHERED_COPPER_GOLEM_STATUE
+  - ENCHANTED_GOLDEN_APPLE
+  - NETHERITE_CHESTPLATE
+  - BROWN_SHULKER_BOX
+  - NETHERITE_SCRAP
+  - GREEN_BUNDLE
+  - TOTEM_OF_UNDYING
+  - NETHERITE_HOE
+  - PHANTOM_MEMBRANE
+  - WAXED_COPPER_GOLEM_STATUE
+  - DIAMOND_CHESTPLATE
+  - NETHERITE_AXE
+  - BLAZE_ROD
+  - COAL_BLOCK
+  - NETHERITE_SHOVEL
+  - DEEPSLATE_COPPER_ORE
+  - WIND_CHARGE
+  - IRON_NUGGET
+  - COPPER_ORE
+  - COPPER_INGOT
+  - NETHERITE_NAUTILUS_ARMOR
+  - ARMOR_STAND
+  - NETHERITE_LEGGINGS
+  - NETHERITE_SWORD
+  - OMINOUS_TRIAL_KEY
+  - DEEPSLATE_IRON_ORE
+  - DEEPSLATE_REDSTONE_ORE
+  - GUNPOWDER
+  - PINK_BUNDLE
+  - REDSTONE_ORE
+  - NETHERITE_SPEAR
+  - TRIAL_KEY
+  - NETHERITE_BLOCK
+  - RED_SHULKER_BOX
+  - DEEPSLATE_EMERALD_ORE
+  - AMETHYST_BLOCK
+  - DIAMOND_SHOVEL
+  - GOLDEN_APPLE
+  - DIAMOND_LEGGINGS
+  - DIAMOND_SPEAR
+  - GOLDEN_CARROT
+  - BROWN_BUNDLE
+  - DIAMOND_NAUTILUS_ARMOR
+  - SHULKER_SHELL
+  - BLUE_BUNDLE
+  - NETHERITE_INGOT
+  - PLAYER_HEAD
+  - NETHERITE_PICKAXE
+  - ENDER_CHEST
+  - LAPIS_ORE
+  - LAPIS_BLOCK
+  - NETHERITE_HORSE_ARMOR
+  - WAXED_EXPOSED_COPPER_GOLEM_STATUE
+  - DEEPSLATE_DIAMOND_ORE
+  - ECHO_SHARD
+  - DIAMOND_BOOTS
+  - PURPLE_BUNDLE
+  - YELLOW_BUNDLE
+  - DEEPSLATE_COAL_ORE
+  - QUARTZ
