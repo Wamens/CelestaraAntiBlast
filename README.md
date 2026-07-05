@@ -1,8 +1,8 @@
 # CelestaraAntiBlast
 
-CelestaraAntiBlast is a small Paper plugin that stops selected dropped items from being destroyed by the blast sources players usually care about: TNT, end crystals, and respawn anchors.
+CelestaraAntiBlast is a small Paper plugin that stops selected dropped items from being destroyed by the blast sources players usually care about: TNT, end crystals, respawn anchors, creepers, and wither skulls.
 
-It does not try to protect items from every possible damage source. Creepers, fire, lava, lightning, beds, withers, and other damage types are left alone on purpose.
+It does not try to protect items from every possible damage source. Fire, lava, lightning, beds, direct wither damage, and other non-blast damage types are left alone on purpose.
 
 ## Version
 
@@ -12,7 +12,7 @@ It does not try to protect items from every possible damage source. Creepers, fi
 
 ## What it does
 
-The plugin watches item entities when they take damage. If the dropped item type is in the protected list, and the damage came from TNT, an end crystal, or a respawn anchor explosion, the damage gets cancelled.
+The plugin watches item entities when they take damage. If the dropped item type is in the protected list, and the damage came from an enabled blast source, the damage gets cancelled.
 
 Protected items are stored in `config.yml`, so you can keep the list exactly how you want it. The plugin caches the list after loading, so normal item checks stay fast.
 
@@ -81,6 +81,8 @@ protection:
   end-crystals: true
   respawn-anchors: true
   tnt: true
+  creepers: true
+  wither-skulls: true
 ```
 
 The item list is under:

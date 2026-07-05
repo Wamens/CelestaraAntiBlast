@@ -6,6 +6,8 @@ protection:
   end-crystals: true
   respawn-anchors: true
   tnt: true
+  creepers: true
+  wither-skulls: true
 
 messages:
   item-added: '&aSuccessfully added &7%item% &ato protected list.'

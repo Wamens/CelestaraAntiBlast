@@ -69,6 +69,8 @@ public final class ItemProtectionListener implements Listener {
         return switch (damager.getType()) {
             case TNT, TNT_MINECART -> settings.tnt();
             case END_CRYSTAL -> settings.endCrystals();
+            case CREEPER -> settings.creepers();
+            case WITHER_SKULL -> settings.witherSkulls();
             default -> false;
         };
     }

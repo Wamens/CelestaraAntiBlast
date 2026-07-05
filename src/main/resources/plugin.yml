@@ -3,7 +3,7 @@ version: '1.0-ALPHA-SNAPSHOT'
 main: net.celestara.CelestaraAntiBlast
 api-version: '1.21'
 authors: [ Wamens ]
-description: Protects configured item drops from TNT, end crystal, and respawn anchor blasts.
+description: Protects configured item drops from selected blast sources.
 commands:
   celestaraantiblast:
     description: Manage CelestaraAntiBlast.
